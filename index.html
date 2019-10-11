@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Face | Emotion Detector - AG</title>
+  <link rel="shortcut icon" href="assets/logo1.png">
   <script defer src="face-api.min.js"></script>
   <script defer src="script.js"></script>
   <style>
@@ -18,16 +19,24 @@
       align-items: center;
       background-image: url("assets/background.jpg");
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: 100%;
+      background-position: center; 
     }
 
     canvas {
       position: absolute;
     }
 
+    #video {
+      border: 5px solid #d6d6d6;
+      padding: 1px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
   </style>
 </head>
 <body>
-  <video id="video" width="720" height="560" autoplay muted></video>
+  <video id="video" width="560" height="560" autoplay muted></video>
 </body>
 </html>
